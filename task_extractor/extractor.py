@@ -9,8 +9,6 @@ from nltk.tokenize import sent_tokenize
 from task_extractor.utils import extract_deadline
 from task_extractor.models import categorize_tasks
 
-# Configure Logging
-
 class AdvancedTaskExtractor:
     def __init__(self):
         nltk.download('punkt', quiet=True)
