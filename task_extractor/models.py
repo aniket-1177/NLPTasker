@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 
-#Topic Modeling (LDA)
+#Categorization using Topic Modeling (LDA)
 
 def categorize_tasks(tasks, processed_sentences):
     """Categorizes tasks using LDA topic modeling."""
@@ -20,7 +20,7 @@ def categorize_tasks(tasks, processed_sentences):
     
     return tasks
 
-# Word Embeddings + Clustering
+# Categorization using Word Embeddings + Clustering
 
     # def train_word_embeddings(self, processed_sentences: List[str]):
     #     """Train Word2Vec embeddings"""

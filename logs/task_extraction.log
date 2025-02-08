@@ -1,0 +1,37 @@
+2025-02-08 16:48:07,007 - INFO - Analyzing Sentence: Rahul wakes up early every day.
+2025-02-08 16:48:07,007 - INFO - Processed Sentence: rahul wake day
+2025-02-08 16:48:07,007 - INFO - Not a task. Skipping.
+2025-02-08 16:48:07,007 - INFO - Analyzing Sentence: He goes to college in the morning and comes back at 3 pm.
+2025-02-08 16:48:07,007 - INFO - Processed Sentence: go college morning come pm
+2025-02-08 16:48:07,022 - INFO - Task Identified: {'task': 'He goes to college in the morning and comes back at 3 pm.', 'processed_task': 'go college morning come pm', 'entity': 'He', 'deadline': None}
+2025-02-08 16:48:07,022 - INFO - Analyzing Sentence: At present, Rahul is outside.
+2025-02-08 16:48:07,022 - INFO - Processed Sentence: present rahul
+2025-02-08 16:48:07,022 - INFO - Not a task. Skipping.
+2025-02-08 16:48:07,022 - INFO - Analyzing Sentence: He has to buy the snacks for all of us.
+2025-02-08 16:48:07,022 - INFO - Processed Sentence: buy snack
+2025-02-08 16:48:07,022 - INFO - Task Identified: {'task': 'He has to buy the snacks for all of us.', 'processed_task': 'buy snack', 'entity': 'He', 'deadline': None}
+2025-02-08 16:48:07,022 - INFO - Analyzing Sentence: Rahul should clean the room by 5 pm today.
+2025-02-08 16:48:07,022 - INFO - Processed Sentence: rahul clean room pm today
+2025-02-08 16:48:07,022 - INFO - Task Identified: {'task': 'Rahul should clean the room by 5 pm today.', 'processed_task': 'rahul clean room pm today', 'entity': 'Rahul', 'deadline': '5 pm today'}
+2025-02-08 16:48:07,022 - INFO - Analyzing Sentence: John needs to review the report by Friday.
+2025-02-08 16:48:07,022 - INFO - Processed Sentence: john need review report friday
+2025-02-08 16:48:07,038 - INFO - Task Identified: {'task': 'John needs to review the report by Friday.', 'processed_task': 'john need review report friday', 'entity': 'John', 'deadline': 'Friday'}
+2025-02-08 16:48:07,038 - INFO - Analyzing Sentence: Alice needs to finish her homework by 6 pm.
+2025-02-08 16:48:07,038 - INFO - Processed Sentence: alice need finish homework pm
+2025-02-08 16:48:07,038 - INFO - Task Identified: {'task': 'Alice needs to finish her homework by 6 pm.', 'processed_task': 'alice need finish homework pm', 'entity': 'Alice', 'deadline': '6 pm'}
+2025-02-08 16:48:07,038 - INFO - Analyzing Sentence: Bob is planning to go for a run tomorrow morning.
+2025-02-08 16:48:07,038 - INFO - Processed Sentence: bob plan go run tomorrow morning
+2025-02-08 16:48:07,038 - INFO - Task Identified: {'task': 'Bob is planning to go for a run tomorrow morning.', 'processed_task': 'bob plan go run tomorrow morning', 'entity': 'Bob', 'deadline': 'tomorrow'}
+2025-02-08 16:48:07,038 - INFO - Analyzing Sentence: The team should discuss the project updates in the meeting next week.
+2025-02-08 16:48:07,038 - INFO - Processed Sentence: team discuss project update meeting week
+2025-02-08 16:48:07,053 - INFO - Task Identified: {'task': 'The team should discuss the project updates in the meeting next week.', 'processed_task': 'team discuss project update meeting week', 'entity': 'team', 'deadline': 'next week'}
+2025-02-08 16:48:07,053 - INFO - Analyzing Sentence: Sarah has to prepare the presentation for the meeting on Monday.
+2025-02-08 16:48:07,053 - INFO - Processed Sentence: sarah prepare presentation meeting monday
+2025-02-08 16:48:07,053 - INFO - Task Identified: {'task': 'Sarah has to prepare the presentation for the meeting on Monday.', 'processed_task': 'sarah prepare presentation meeting monday', 'entity': 'Sarah', 'deadline': 'for the meeting on Monday'}
+2025-02-08 16:48:07,053 - INFO - Analyzing Sentence: Tom will submit the project report by the end of the week.
+2025-02-08 16:48:07,053 - INFO - Processed Sentence: tom submit project report end week
+2025-02-08 16:48:07,053 - INFO - Task Identified: {'task': 'Tom will submit the project report by the end of the week.', 'processed_task': 'tom submit project report end week', 'entity': 'Tom', 'deadline': 'the end of the week'}
+2025-02-08 16:48:07,053 - INFO - Analyzing Sentence: The group needs to finalize the budget by 3 pm tomorrow.
+2025-02-08 16:48:07,053 - INFO - Processed Sentence: group need finalize budget pm tomorrow
+2025-02-08 16:48:07,069 - INFO - Task Identified: {'task': 'The group needs to finalize the budget by 3 pm tomorrow.', 'processed_task': 'group need finalize budget pm tomorrow', 'entity': 'group', 'deadline': '3 pm tomorrow'}
+2025-02-08 16:48:07,085 - INFO - Tasks extracted and saved to output/output.csv

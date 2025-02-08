@@ -1,6 +1,6 @@
 import spacy
 import nltk
-import logging
+from logger import logger
 import re
 import csv
 from typing import List, Dict
@@ -10,7 +10,6 @@ from task_extractor.utils import extract_deadline
 from task_extractor.models import categorize_tasks
 
 # Configure Logging
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 class AdvancedTaskExtractor:
     def __init__(self):
@@ -22,8 +21,9 @@ class AdvancedTaskExtractor:
         
         self.task_indicators = {
             'imperative_verbs': ['buy', 'clean', 'review', 'prepare', 'submit', 'finalize',
-                                 'complete', 'schedule', 'discuss', 'send', 'create', 'update'],
-            'task_phrases': ['need to', 'has to', 'should', 'must', 'will', 'plan to', 'going to']
+                                 'complete', 'schedule', 'discuss', 'send', 'create', 'update',
+                                 'resolve', 'go', 'finish', 'plan', 'organize'],
+            'task_phrases': ['need to', 'has to', 'should', 'must', 'will', 'plan to', 'going to', 'wants to']
         }
 
     def preprocess_text(self, text: str) -> List[str]:
@@ -48,14 +48,14 @@ class AdvancedTaskExtractor:
         tasks = []
 
         for orig_sent, proc_sent in zip(original_sentences, processed_sentences):
-            logging.info(f"Analyzing Sentence: {orig_sent}")
-            logging.info(f"Processed Sentence: {proc_sent}")
+            logger.info(f"Analyzing Sentence: {orig_sent}")
+            logger.info(f"Processed Sentence: {proc_sent}")
             
             is_task = any(verb in proc_sent for verb in self.task_indicators['imperative_verbs']) or \
                       any(phrase in orig_sent.lower() for phrase in self.task_indicators['task_phrases'])
 
             if not is_task:
-                logging.info("Not a task. Skipping.")
+                logger.info("Not a task. Skipping.")
                 continue
             
             doc = self.nlp(orig_sent)
@@ -71,7 +71,7 @@ class AdvancedTaskExtractor:
                 'deadline': deadline
             }
 
-            logging.info(f"Task Identified: {task_entry}")
+            logger.info(f"Task Identified: {task_entry}")
             tasks.append(task_entry)
         
         return tasks
